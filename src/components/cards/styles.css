@@ -1,0 +1,81 @@
+#cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    grid-gap:  10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+    background-position: 80% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+    font-size: 17px;
+    
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.cards-description {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    opacity: 0;
+}
+
+.cards-description:hover {
+    width: 300px;
+    height: 600px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    backdrop-filter: blur(1px);
+}
+
+.banner-1 {
+    background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg');
+
+}
+
+.banner-2 {
+    background-image:url('https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt9f9df38e50f393d4/60ee0f4c5eda9722617c575e/Lux_0.jpg');
+    background-position: 70% 50%;
+}
+
+.banner-3 {
+    background-image:url('https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg');
+
+}
+
+.banner-4 {
+    background-image:url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg');
+
+}
+
+@media (max-width: 768px) {
+    .cards-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

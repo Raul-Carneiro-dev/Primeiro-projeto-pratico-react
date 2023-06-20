@@ -1,0 +1,156 @@
+
+
+
+#heros-container {
+    background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/12/02_Summoner_s_Rift_hi182k3q611izhk9dbql.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heros-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heros {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-1 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg');
+    background-position: 80%;
+
+}
+.hero-2 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_11.jpg');
+    background-position: 80%;
+}
+.hero-3 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_36.jpg');
+}
+.hero-4 {
+    background-image: url('https://d1ki6hjeuoplax.cloudfront.net/images/_1200x630_crop_center-center_82_none/Wild-Rift-Lux.jpg?mtime=1617521615');
+    background-position: 60%;
+}
+.hero-5 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_27.jpg');
+}
+.hero-6 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_5.jpg');
+}
+.hero-7 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_11.jpg');
+    background-position: 70%;
+}
+.hero-8 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg');
+    background-position: 70%;
+}
+.hero-9 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg');
+    background-position: 90%;
+}
+.hero-10 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg');
+}
+.hero-11 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_17.jpg');
+}  
+.hero-12 {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_6.jpg');
+}
+
+.heros-description {
+    background-color: #258ac987;
+    width: 80%;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.button-description {
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 89%;
+    position: absolute;
+}
+
+.heros-information-on {
+    background-color: #ffffffe3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    margin-left: 14%;
+    margin-bottom: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heros-information-off {
+    display: none;
+}
+
+.heros-information-on h3{
+    text-transform: uppercase;
+}
+
+.heros-information-on h4 {
+    position: relative;
+}
+
+.skill {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.hero-skill {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.hero-skill img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+@media(max-width: 768px) {
+    .heros-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,88 @@
+#cinematic-container {
+    background-image: url("https://pbs.twimg.com/media/EaUnExCU8AAalKe.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cinematic-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.cinematic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+}
+
+.cinematic-content h1 {
+    color: #fff;
+    margin: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.cinematic-content video {
+    width: auto;
+    height: 500px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.clips {
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 55px;
+    border: solid 3px #000;
+}
+
+.thumbnail-clip-off {
+    display: none;
+}
+
+.play-button-on {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png');
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    transition: 1s;
+    margin-top: 60px;
+}
+
+.play-button-on:hover {
+    background-color: rgb(121, 121, 121)
+}
+
+.play-button-off {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .cinematic-content video {
+        height: auto;
+        width: 350px;
+    }
+
+    .clips {
+        height: auto;
+        width: 350px;
+    }
+
+    .play-button-on {
+        width: 60px;
+        height: 60px;
+    }
+}

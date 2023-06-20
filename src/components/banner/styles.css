@@ -1,0 +1,8 @@
+
+#banner {
+    background-image: url('https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltcdaae394f8be098d/60635f5bb317b50fd8106d2f/wr-article-torneiosdecomunidade-banner.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 600px;
+    border-bottom: solid 2px black;
+}

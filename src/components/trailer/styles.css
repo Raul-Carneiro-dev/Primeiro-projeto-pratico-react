@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#paralaxe {
+    background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/10/Banner_Preseason-1_dwfwpnp0byzkpe2hk65v.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#trailer-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.trailer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trailer-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer {
+    width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.thumbnail-on {
+    width: 500px;
+    border-radius: 5px;
+    position: absolute;
+    border: solid 2px black;
+}
+
+.thumbnail-off {
+    display: none;
+}
+
+.button-on {
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png');
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    transition: 1s;
+}
+
+.button-on:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.button-off {
+    display: none;
+}
+
+.sinopse {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 75px;
+}
+
+.description {
+    background-color: #258ac987;
+    padding: 5px;
+    width: 80%;
+    color: white;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-radius: 5px;
+}
+
+.download-button {
+    width: 200px;
+    height: 60px;
+    background-color:#258ac9;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.download-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .trailer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer-case {
+        margin-top: 10px;
+    }
+
+    .trailer {
+        width: 300px;
+    }
+
+    .thumbnail-on {
+        width: 300px;
+    }
+
+    .button-on {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sinopse {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+
+}
