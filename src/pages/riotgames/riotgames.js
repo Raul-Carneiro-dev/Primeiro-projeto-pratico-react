@@ -6,7 +6,6 @@ import logoFooter from '../../assets/riotgames/riot-games-768.png';
 import thumbnail from '../../assets/riotgames/thumbnail-netflix.jpg';
 import { UserContext } from "../../contexts/userContext";
 import { Link } from "react-router-dom";
-import icon from '../../assets/icons/riot logo 2.png';
 
 
 
@@ -26,8 +25,6 @@ function RiotGames () {
 
     return (
         <div id="riotgames">
-
-            <link rel="icon" type="image/x-icon" href={icon}/>
 
             <div id="header-riotgames">
                 <img className="logo-riotgames" src={logo} alt='logo-riotgames'/>
