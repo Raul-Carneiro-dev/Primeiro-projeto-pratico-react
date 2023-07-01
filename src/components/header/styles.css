@@ -61,7 +61,13 @@
 
 .sidebar-on {
     display: none;
+    animation-name: animacao;
+    animation-duration: .5s;
+}
 
+@keyframes animacao {
+    from {transform: translateY(50px);}
+    to {transform: translateY(0px);}
 }
 
 .sidebar-off {
@@ -108,6 +114,7 @@
         margin-left: 80%;
         transform: scale(1.4)
     }
+
     
     .button-sidebar-off {
         display: none;

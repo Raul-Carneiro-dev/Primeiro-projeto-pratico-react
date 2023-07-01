@@ -76,14 +76,15 @@
 }
 
 .description {
-    background-color: #258ac987;
+    background-color: #fff;;
     padding: 5px;
     width: 80%;
-    color: white;
+    color: #000;
     font-size: 15px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    text-shadow: 0.1em 0.1em 0.2em black;
     border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.768) 0px 7px 29px 0px;
 }
 
 .download-button {
@@ -139,7 +140,7 @@
     }
 
     .description {
-        width: 100%;
+        width: 200%;
     }
 
 
